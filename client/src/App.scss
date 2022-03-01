@@ -1,0 +1,107 @@
+body {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0px;
+}
+
+.mainmenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #dce2f1;
+}
+
+.mainBody {
+  height: 90%;
+  width: 100%;
+  position: absolute;
+}
+
+.title1 {
+  font-size: 35px;
+  color: green;
+}
+.title2 {
+  font-size: 25px;
+  color: green;
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+}
+.normal-button,
+.dropdown-button {
+  padding: 0;
+  border: 0;
+  background-color: #dce2f1;
+  color: #333;
+  cursor: pointer;
+  outline: 0;
+  font-size: 25px;
+  margin: 20px;
+}
+.change-button {
+  padding: 5px;
+  border: 0;
+  background-color: #ced4e5;
+  color: #333;
+  cursor: pointer;
+  outline: 0;
+  font-size: 20px;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.dropdown {
+  position: absolute;
+  background-color: #ebedf3;
+  left: -30px;
+  width: 200px;
+  text-align: center;
+  z-index: 2;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  border-radius: 5px;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14);
+}
+
+.signin-dropdown {
+  position: absolute;
+  background-color: #ebedf3;
+  left: 80px;
+  height: 100px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  text-align: center;
+  z-index: 2;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  border-radius: 5px;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 8px 12px;
+}
+
+li.active {
+  background-color: rgba(0, 0, 0, 0.36);
+}
+
+li:hover {
+  background-color: rgba(0, 0, 0, 0.14);
+  cursor: pointer;
+}
